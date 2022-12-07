@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+h1{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 40px;
+}
+
+.gallery{
+	height: 80%;
+	width: 100%;
+	display: flex;
+	margin: 5% auto 0;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+.image-box{
+	margin: 0 1%;
+	flex-grow: 1;
+	flex-basis: 0;
+	transition: .5s;
+}
+
+.image-box img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: .5s;
+}
+
+.image-box:hover{
+	flex-basis: 50%;
+}
+
+body{
+	background: black;
+}
+
+.title h1{
+	color: #710C04;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+#main nav ul{
+   float: right;
+   margin-right: 20px;
+   margin-top: 20px;
+   font-family: 'Anton', sans-serif;
+
+
+}
+
+#main nav ul li{
+   list-style-position: none;
+   display: inline-block;
+   line-height: 50px;
+
+}
+
+   
+#main nav ul li a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 14px;
+   padding: 6px 13px;
+   transition: 0.4s all ease-out;
+}
+
+#main nav ul li a:hover{
+   background: #710C04;
+   color: #000;
+   transition: 0.4s all ease-out;
+}

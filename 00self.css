@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: 0;
+   height: 1000px;
+}
+
+.banner{
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+body{
+   background-color: black;
+}
+.about h3{
+   font-size: 50px;
+   color: #710C04;
+   margin-top: 20px;
+   margin-left: 20px;
+   font-family: 'Anton', sans-serif;
+   letter-spacing: 7px;
+   z-index: 1000;
+
+}
+
+
+
+.ss{
+    font-size: 30px;
+   color: #710C04;
+   margin-top: 20px;
+   margin-left: 50px;
+   font-family: 'Anton', sans-serif;
+   letter-spacing: 5px;
+   z-index: 1000;
+
+}
+
+.content{
+   width: 1130px;
+   max-width: 90%;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-around;
+   color: white;
+   
+
+}
+
+#main nav ul{
+   float: right;
+   margin-right: 20px;
+   margin-top: 20px;
+   font-family: 'Anton', sans-serif;
+   
+
+
+}
+
+#main nav ul li{
+   list-style-position: none;
+   display: inline-block;
+   line-height: 50px;
+
+}
+
+   
+#main nav ul li a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 14px;
+   padding: 6px 13px;
+   transition: 0.4s all ease-out;
+}
+
+#main nav ul li a:hover{
+   background: #710C04;
+   color: #000;
+   transition: 0.4s all ease-out;
+}
+
+.container{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 40px 0;
+}
+
+.container .card{
+   position: relative;
+   width: 300px;
+   height: 400px;
+   background: rgba(225, 225, 225, 0.05);
+   margin: 20px;
+   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+   border-radius: 15px;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   backdrop-filter: blur(10px);
+   background: linear-gradient(180deg, rgba(0,0,0,1) 45%, rgba(101,16,16,1) 100%);
+}
+
+.container .card .content{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   opacity: 0;
+   transition: 0.5s;
+   transform: translateY(100px);
+   font-family: 'Anton', sans-serif;
+   letter-spacing: 2px;
+   color: whitesmoke;
+}
+
+.container .card:hover .content{
+   opacity: 1;
+   transform: translateY(0px);
+}
+
+.container .card .content .imgBx{
+   position: relative;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   overflow: hidden;
+   border: 10px solid rgba(0, 0, 0, 0.25);
+
+}
+
+.container .card .content .imgBx img{
+   position: absolute;
+   top: 0;
+   left: ;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.container .card .content .imgBx h3{
+   color: white;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-weight: 500;
+   font-size: 18px;
+   text-align: center;
+   margin: 20px 0 10px;
+   line-height: 1.1em;
+   font-family: 'Anton', sans-serif;
+}
+
+.container .card .content .imgBx h3 span{
+   font-size: 12px;
+   font-weight: 300;
+   text-transform: initial;
+   font-family: 'Anton', sans-serif;
+}
